@@ -9,6 +9,8 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.9"/>
+        <ProjectReference Include="..\serviceMicroservice.Application\serviceMicroservice.Application.csproj" />
+        <ProjectReference Include="..\serviceMicroservice.Domain\serviceMicroservice.Domain.csproj" />
     </ItemGroup>
 
 </Project>
