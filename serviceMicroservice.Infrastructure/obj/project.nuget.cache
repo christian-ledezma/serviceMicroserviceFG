@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Nq4CRTymE00=",
+  "dgSpecHash": "W/MYiP5E1eg=",
   "success": true,
   "projectFilePath": "/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Infrastructure/serviceMicroservice.Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/christianledezma/.nuget/packages/dapper/2.1.66/dapper.2.1.66.nupkg.sha512",
+    "/Users/christianledezma/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "/Users/christianledezma/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "/Users/christianledezma/.nuget/packages/npgsql/9.0.4/npgsql.9.0.4.nupkg.sha512"
+  ],
   "logs": []
 }
