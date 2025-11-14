@@ -8,9 +8,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.9"/>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.9" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
         <ProjectReference Include="..\serviceMicroservice.Application\serviceMicroservice.Application.csproj" />
         <ProjectReference Include="..\serviceMicroservice.Domain\serviceMicroservice.Domain.csproj" />
+        <ProjectReference Include="..\serviceMicroservice.Infrastructure\serviceMicroservice.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

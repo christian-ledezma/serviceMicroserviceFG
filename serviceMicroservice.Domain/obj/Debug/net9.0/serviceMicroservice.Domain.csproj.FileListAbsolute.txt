@@ -1,0 +1,11 @@
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Domain/bin/Debug/net9.0/serviceMicroservice.Domain.deps.json
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Domain/bin/Debug/net9.0/serviceMicroservice.Domain.dll
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Domain/bin/Debug/net9.0/serviceMicroservice.Domain.pdb
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Domain/obj/Debug/net9.0/serviceMicroservice.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Domain/obj/Debug/net9.0/serviceMicroservice.Domain.AssemblyInfoInputs.cache
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Domain/obj/Debug/net9.0/serviceMicroservice.Domain.AssemblyInfo.cs
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Domain/obj/Debug/net9.0/serviceMicroservice.Domain.csproj.CoreCompileInputs.cache
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Domain/obj/Debug/net9.0/serviceMicroservice.Domain.dll
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Domain/obj/Debug/net9.0/refint/serviceMicroservice.Domain.dll
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Domain/obj/Debug/net9.0/serviceMicroservice.Domain.pdb
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Domain/obj/Debug/net9.0/ref/serviceMicroservice.Domain.dll

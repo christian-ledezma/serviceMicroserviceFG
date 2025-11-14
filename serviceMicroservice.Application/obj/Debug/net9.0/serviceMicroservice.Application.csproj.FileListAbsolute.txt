@@ -1,0 +1,15 @@
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/bin/Debug/net9.0/serviceMicroservice.Application.deps.json
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/bin/Debug/net9.0/serviceMicroservice.Application.dll
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/bin/Debug/net9.0/serviceMicroservice.Application.pdb
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/bin/Debug/net9.0/serviceMicroservice.Domain.dll
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/bin/Debug/net9.0/serviceMicroservice.Domain.pdb
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/serviceMicroservice.Application.csproj.AssemblyReference.cache
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/serviceMicroservice.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/serviceMicroservice.Application.AssemblyInfoInputs.cache
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/serviceMicroservice.Application.AssemblyInfo.cs
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/serviceMicroservice.Application.csproj.CoreCompileInputs.cache
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/serviceM.264F9EF6.Up2Date
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/serviceMicroservice.Application.dll
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/refint/serviceMicroservice.Application.dll
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/serviceMicroservice.Application.pdb
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/ref/serviceMicroservice.Application.dll

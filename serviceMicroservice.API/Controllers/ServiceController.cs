@@ -28,4 +28,31 @@ public class ServiceController : ControllerBase
         var res = await _repository.GetAll();
         return Ok(res);
     }
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetById(int id)
+    {
+        var res = await _repository.GetById(id);
+        return Ok(res);
+    }
+    
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Update(int id, [FromBody] Domain.Entities.Service service, [FromHeader(Name = "User-Id")] int userId)
+    {
+        service.Id = id;
+        var res = await _repository.Update(service, userId);
+        return Ok(res);
+    }
+    
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteByIdAsync(int id, [FromHeader(Name = "User-Id")] int userId)
+    {
+        var res = await _repository.DeleteById(id, userId);
+        
+        if (res)
+            return Ok(new { message = "Service deleted successfully" });
+        
+        return NotFound(new { message = "Service not found" });
+    }
+
 }
