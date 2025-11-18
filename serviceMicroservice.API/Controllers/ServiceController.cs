@@ -47,12 +47,12 @@ public class ServiceController : ControllerBase
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteByIdAsync(int id, [FromHeader(Name = "User-Id")] int userId)
     {
-        var res = await _repository.DeleteById(id, userId);
-        
-        if (res)
-            return Ok(new { message = "Service deleted successfully" });
-        
-        return NotFound(new { message = "Service not found" });
-    }
+        var success = await _repository.DeleteById(id, userId);
+
+        if (!success)
+            return NotFound(new { message = "Servicio no encontrado" });
+
+        return Ok(new { message = "Servicio desactivado exitosamente" });
+     }
 
 }
