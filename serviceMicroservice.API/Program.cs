@@ -1,5 +1,6 @@
 using serviceMicroservice.Application.Services;
 using serviceMicroservice.Domain.Ports;
+using serviceMicroservice.Domain.Services;
 using serviceMicroservice.Infrastructure.Connection;
 using serviceMicroservice.Infrastructure.Persistance;
 
@@ -14,6 +15,9 @@ builder.Services.AddSingleton(connectionManager);
 builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
 builder.Services.AddScoped<ServiceService>();
 builder.Services.AddScoped<IDbConnectionFactory, PostgreSqlConnection>();
+
+// Inyección de Validadores
+builder.Services.AddScoped<IValidator<serviceMicroservice.Domain.Entities.Service>, ServiceValidator>();
 
 
 builder.Services.AddControllers();
