@@ -9,3 +9,4 @@
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Domain/obj/Debug/net9.0/refint/serviceMicroservice.Domain.dll
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Domain/obj/Debug/net9.0/serviceMicroservice.Domain.pdb
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Domain/obj/Debug/net9.0/ref/serviceMicroservice.Domain.dll
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Domain/obj/Debug/net9.0/serviceMicroservice.Domain.sourcelink.json

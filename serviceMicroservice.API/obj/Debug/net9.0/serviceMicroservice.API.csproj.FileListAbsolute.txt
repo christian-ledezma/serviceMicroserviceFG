@@ -41,3 +41,4 @@
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.API/obj/Debug/net9.0/serviceMicroservice.API.pdb
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.API/obj/Debug/net9.0/serviceMicroservice.API.genruntimeconfig.cache
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.API/obj/Debug/net9.0/ref/serviceMicroservice.API.dll
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.API/obj/Debug/net9.0/serviceMicroservice.API.sourcelink.json

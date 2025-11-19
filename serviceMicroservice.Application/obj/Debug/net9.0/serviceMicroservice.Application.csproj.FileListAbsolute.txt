@@ -13,3 +13,4 @@
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/refint/serviceMicroservice.Application.dll
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/serviceMicroservice.Application.pdb
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/ref/serviceMicroservice.Application.dll
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/serviceMicroservice.Application.sourcelink.json

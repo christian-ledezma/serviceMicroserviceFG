@@ -13,3 +13,4 @@
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Infrastructure/obj/Debug/net9.0/refint/serviceMicroservice.Infrastructure.dll
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Infrastructure/obj/Debug/net9.0/serviceMicroservice.Infrastructure.pdb
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Infrastructure/obj/Debug/net9.0/ref/serviceMicroservice.Infrastructure.dll
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Infrastructure/obj/Debug/net9.0/serviceMicroservice.Infrastructure.sourcelink.json
