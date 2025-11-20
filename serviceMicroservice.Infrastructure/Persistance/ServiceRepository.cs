@@ -41,6 +41,7 @@ public class ServiceRepository : IServiceRepository
             created_by_user_id = userId
         };
         var newId = await connection.ExecuteScalarAsync<int>(query, parameters);
+        service.Id = newId;
         return newId > 0;
     }
 

@@ -21,8 +21,16 @@ public class ServiceController : ControllerBase
     [HttpPost("insert")]
     [ProducesResponseType(typeof(SuccessResponse), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ValidationErrorResponse), StatusCodes.Status400BadRequest)]
-    public async Task<IActionResult> Insert([FromBody] Domain.Entities.Service service, [FromHeader(Name = "User-Id")] int userId)
+    public async Task<IActionResult> Insert([FromBody] CreateServiceDto serviceDto, [FromHeader(Name = "User-Id")] int userId)
     {
+        var service = new Domain.Entities.Service
+        {
+            Name = serviceDto.Name,
+            Type = serviceDto.Type,
+            Description = serviceDto.Description,
+            Price = serviceDto.Price,
+        };
+        
         var validationResult = _validator.Validate(service);
         
         if (validationResult.IsFailure)
@@ -33,10 +41,10 @@ public class ServiceController : ControllerBase
                 Errors = validationResult.Errors
             });
         }
+        
+        var created = await _serviceService.Create(service, userId);
 
-        var success = await _serviceService.Create(service, userId);
-
-        if (!success)
+        if (!created)
         {
             return StatusCode(500, new { message = "Error al crear el servicio" });
         }
