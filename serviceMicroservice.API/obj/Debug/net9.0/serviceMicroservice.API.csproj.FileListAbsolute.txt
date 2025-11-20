@@ -42,3 +42,11 @@
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.API/obj/Debug/net9.0/serviceMicroservice.API.genruntimeconfig.cache
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.API/obj/Debug/net9.0/ref/serviceMicroservice.API.dll
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.API/obj/Debug/net9.0/serviceMicroservice.API.sourcelink.json
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.API/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.API/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.API/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.API/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.API/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.API/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll

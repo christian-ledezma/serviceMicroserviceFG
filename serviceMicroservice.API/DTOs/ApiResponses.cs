@@ -18,3 +18,11 @@ public class SuccessResponse
     public string Message { get; set; }
     public int Id { get; set; }
 }
+
+public class UpdateServiceDto
+{
+    public string Name { get; set; }
+    public string Type { get; set; }
+    public decimal Price { get; set; }
+    public string Description { get; set; }
+}

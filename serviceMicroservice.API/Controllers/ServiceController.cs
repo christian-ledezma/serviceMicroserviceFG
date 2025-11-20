@@ -87,7 +87,7 @@ public class ServiceController : ControllerBase
     [ProducesResponseType(typeof(SuccessResponse), StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ValidationErrorResponse), StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<IActionResult> Update(int id, [FromBody] Domain.Entities.Service service, [FromHeader(Name = "User-Id")] int userId)
+    public async Task<IActionResult> Update(int id, [FromBody] UpdateServiceDto serviceDto, [FromHeader(Name = "User-Id")] int userId)
     {
         var existingService = await _serviceService.GetById(id);
         if (existingService == null)
@@ -95,7 +95,14 @@ public class ServiceController : ControllerBase
             return NotFound(new { message = $"Servicio con ID {id} no encontrado" });
         }
 
-        service.Id = id;
+        var service = new Domain.Entities.Service
+        {
+            Id = id,
+            Name = serviceDto.Name,
+            Type = serviceDto.Type,
+            Description = serviceDto.Description,
+            Price = serviceDto.Price
+        };
 
         var validationResult = _validator.Validate(service);
         
