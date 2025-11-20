@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using serviceMicroservice.Application.Services;
 using serviceMicroservice.Domain.Services;
@@ -18,6 +19,7 @@ public class ServiceController : ControllerBase
         _validator = validator;
     }
 
+    [Authorize(Roles = "Manager")]
     [HttpPost("insert")]
     [ProducesResponseType(typeof(SuccessResponse), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ValidationErrorResponse), StatusCodes.Status400BadRequest)]
@@ -58,7 +60,8 @@ public class ServiceController : ControllerBase
                 Id = service.Id
             });
     }
-
+    
+    [Authorize(Roles = "Manager")]
     [HttpGet]
     [ProducesResponseType(typeof(IEnumerable<Domain.Entities.Service>), StatusCodes.Status200OK)]
     public async Task<IActionResult> Select()
@@ -67,6 +70,7 @@ public class ServiceController : ControllerBase
         return Ok(services);
     }
 
+    [Authorize(Roles = "Manager")]
     [HttpGet("{id}")]
     [ProducesResponseType(typeof(Domain.Entities.Service), StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ValidationErrorResponse), StatusCodes.Status400BadRequest)]
@@ -83,6 +87,7 @@ public class ServiceController : ControllerBase
         return Ok(service);
     }
     
+    [Authorize(Roles = "Manager")]
     [HttpPut("{id}")]
     [ProducesResponseType(typeof(SuccessResponse), StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ValidationErrorResponse), StatusCodes.Status400BadRequest)]
@@ -129,6 +134,7 @@ public class ServiceController : ControllerBase
         });
     }
     
+    [Authorize(Roles = "Manager")]
     [HttpDelete("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ValidationErrorResponse), StatusCodes.Status400BadRequest)]
