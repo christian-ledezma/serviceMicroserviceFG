@@ -8,9 +8,9 @@
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/serviceMicroservice.Application.AssemblyInfoInputs.cache
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/serviceMicroservice.Application.AssemblyInfo.cs
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/serviceMicroservice.Application.csproj.CoreCompileInputs.cache
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/serviceMicroservice.Application.sourcelink.json
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/serviceM.264F9EF6.Up2Date
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/serviceMicroservice.Application.dll
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/refint/serviceMicroservice.Application.dll
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/serviceMicroservice.Application.pdb
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/ref/serviceMicroservice.Application.dll
-/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Application/obj/Debug/net9.0/serviceMicroservice.Application.sourcelink.json

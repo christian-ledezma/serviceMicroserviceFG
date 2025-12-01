@@ -8,9 +8,9 @@
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Infrastructure/obj/Debug/net9.0/serviceMicroservice.Infrastructure.AssemblyInfoInputs.cache
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Infrastructure/obj/Debug/net9.0/serviceMicroservice.Infrastructure.AssemblyInfo.cs
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Infrastructure/obj/Debug/net9.0/serviceMicroservice.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Infrastructure/obj/Debug/net9.0/serviceMicroservice.Infrastructure.sourcelink.json
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Infrastructure/obj/Debug/net9.0/serviceM.C8A25AD5.Up2Date
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Infrastructure/obj/Debug/net9.0/serviceMicroservice.Infrastructure.dll
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Infrastructure/obj/Debug/net9.0/refint/serviceMicroservice.Infrastructure.dll
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Infrastructure/obj/Debug/net9.0/serviceMicroservice.Infrastructure.pdb
 /Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Infrastructure/obj/Debug/net9.0/ref/serviceMicroservice.Infrastructure.dll
-/Users/christianledezma/RiderProjects/serviceMicroservice/serviceMicroservice.Infrastructure/obj/Debug/net9.0/serviceMicroservice.Infrastructure.sourcelink.json
