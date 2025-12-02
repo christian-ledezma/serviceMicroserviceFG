@@ -61,7 +61,7 @@ public class ServiceController : ControllerBase
             });
     }
     
-    [Authorize(Roles = "Manager")]
+    [Authorize(Roles = "Manager,CEO")]
     [HttpGet]
     [ProducesResponseType(typeof(IEnumerable<Domain.Entities.Service>), StatusCodes.Status200OK)]
     public async Task<IActionResult> Select()
