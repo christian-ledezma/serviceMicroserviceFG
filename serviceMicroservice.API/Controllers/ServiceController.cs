@@ -19,7 +19,7 @@ public class ServiceController : ControllerBase
         _validator = validator;
     }
 
-    [Authorize(Roles = "Manager")]
+    [Authorize(Roles = "CEO")]
     [HttpPost("insert")]
     [ProducesResponseType(typeof(SuccessResponse), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ValidationErrorResponse), StatusCodes.Status400BadRequest)]
@@ -70,7 +70,7 @@ public class ServiceController : ControllerBase
         return Ok(services);
     }
 
-    [Authorize(Roles = "Manager")]
+    [Authorize(Roles = "Manager,CEO")]
     [HttpGet("{id}")]
     [ProducesResponseType(typeof(Domain.Entities.Service), StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ValidationErrorResponse), StatusCodes.Status400BadRequest)]
@@ -87,7 +87,7 @@ public class ServiceController : ControllerBase
         return Ok(service);
     }
     
-    [Authorize(Roles = "Manager")]
+    [Authorize(Roles = "CEO")]
     [HttpPut("{id}")]
     [ProducesResponseType(typeof(SuccessResponse), StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ValidationErrorResponse), StatusCodes.Status400BadRequest)]
@@ -134,7 +134,7 @@ public class ServiceController : ControllerBase
         });
     }
     
-    [Authorize(Roles = "Manager")]
+    [Authorize(Roles = "CEO")]
     [HttpDelete("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ValidationErrorResponse), StatusCodes.Status400BadRequest)]
