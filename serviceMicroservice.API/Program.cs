@@ -39,7 +39,7 @@ builder.Services.AddAuthentication(options =>
             ValidateIssuer = true,
             ValidateAudience = true,
             ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
+            ValidateIssuerSigningKey = true,    
             ValidIssuer = jwtSettings["ValidIssuer"],
             ValidAudience = jwtSettings["ValidAudience"],
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey!))
@@ -55,6 +55,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+Dapper.DefaultTypeMap.MatchNamesWithUnderscores = true;
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -62,8 +64,6 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseAuthentication();
-app.UseAuthorization();
-
 app.UseAuthorization();
 
 app.MapControllers();

@@ -36,4 +36,14 @@ public class ServiceService
     {
         return await _repository.DeleteByIdAsync(id, userId);
     }
+    
+    public async Task<bool> UpdateAccumulatedRevenue(int serviceId, decimal amount, string operation)
+    {
+        if (operation != "ADD" && operation != "SUBTRACT")
+        {
+            throw new ArgumentException("La operación debe ser 'ADD' o 'SUBTRACT'", nameof(operation));
+        }
+        
+        return await _repository.UpdateAccumulatedRevenueAsync(serviceId, amount, operation);
+    }
 }

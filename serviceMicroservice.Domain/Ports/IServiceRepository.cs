@@ -9,4 +9,5 @@ public interface IServiceRepository
     public Task<bool> CreateAsync(Service service, int userId);
     public Task<bool> UpdateAsync(Service service, int userId);
     public Task<bool> DeleteByIdAsync(int id, int userId);
+    public Task<bool> UpdateAccumulatedRevenueAsync(int serviceId, decimal amount, string operation);
 }   

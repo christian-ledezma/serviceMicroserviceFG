@@ -56,7 +56,7 @@ public class ServiceRepository : IServiceRepository
             type = service.Type,
             price = service.Price,
             description = service.Description,
-            modified_by_user_id = userId
+            modified_by_user_id = userId,
         };
         return await connection.ExecuteScalarAsync<bool>(query, parameters);
     }
@@ -69,6 +69,19 @@ public class ServiceRepository : IServiceRepository
         {
             id,
             modified_by_user_id = userId
+        };
+        return await connection.ExecuteScalarAsync<bool>(query, parameters);
+    }
+    
+    public async Task<bool> UpdateAccumulatedRevenueAsync(int serviceId, decimal amount, string operation)
+    {
+        await using var connection = _dbConnectionFactory.CreateConnection();
+        const string query = "SELECT fn_update_service_accumulated_revenue(@p_service_id, @p_amount, @p_operation)";
+        var parameters = new
+        {
+            p_service_id = serviceId,
+            p_amount = amount,
+            p_operation = operation
         };
         return await connection.ExecuteScalarAsync<bool>(query, parameters);
     }

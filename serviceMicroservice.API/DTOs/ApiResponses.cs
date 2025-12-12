@@ -26,3 +26,10 @@ public class UpdateServiceDto
     public decimal Price { get; set; }
     public string Description { get; set; }
 }
+
+public class UpdateAccumulatedRevenueDto
+{
+    public int ServiceId { get; set; }
+    public decimal Amount { get; set; }
+    public string Operation { get; set; }
+}

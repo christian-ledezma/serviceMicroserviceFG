@@ -156,6 +156,51 @@ public class ServiceController : ControllerBase
 
         return Ok(new { message = "Servicio desactivado exitosamente" });
     
-     }
+    }
+
+    [Authorize(Roles = "Manager")]
+    [HttpPost("update-accumulated-revenue")]
+    [ProducesResponseType(typeof(SuccessResponse), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ValidationErrorResponse), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> UpdateAccumulatedRevenue([FromBody] UpdateAccumulatedRevenueDto dto)
+    {
+        if (dto.Amount <= 0)
+        {
+            return BadRequest(new ValidationErrorResponse
+            {
+                Message = "Validación fallida",
+                Errors = new List<string> { "El monto debe ser mayor que cero" }
+            });
+        }
+
+        if (dto.Operation != "ADD" && dto.Operation != "SUBTRACT")
+        {
+            return BadRequest(new ValidationErrorResponse
+            {
+                Message = "Validación fallida",
+                Errors = new List<string> { "La operación debe ser 'ADD' o 'SUBTRACT'" }
+            });
+        }
+
+        var existingService = await _serviceService.GetById(dto.ServiceId);
+        if (existingService == null)
+        {
+            return NotFound(new { message = $"Servicio con ID {dto.ServiceId} no encontrado" });
+        }
+
+        var success = await _serviceService.UpdateAccumulatedRevenue(dto.ServiceId, dto.Amount, dto.Operation);
+
+        if (!success)
+        {
+            return StatusCode(500, new { message = "Error al actualizar el acumulador de ingresos" });
+        }
+
+        return Ok(new SuccessResponse
+        {
+            Message = "Acumulador de ingresos actualizado exitosamente",
+            Id = dto.ServiceId
+        });
+    }
 
 }
