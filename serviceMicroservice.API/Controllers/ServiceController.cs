@@ -159,11 +159,13 @@ public class ServiceController : ControllerBase
     }
 
     [Authorize(Roles = "Manager")]
-    [HttpPost("update-accumulated-revenue")]
+    [HttpPost("accumulated-revenue/{id}")]
     [ProducesResponseType(typeof(SuccessResponse), StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ValidationErrorResponse), StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<IActionResult> UpdateAccumulatedRevenue([FromBody] UpdateAccumulatedRevenueDto dto)
+    public async Task<IActionResult> UpdateAccumulatedRevenue(
+        int id,
+        [FromBody] UpdateAccumulatedRevenueDto dto)
     {
         if (dto.Amount <= 0)
         {
@@ -183,13 +185,13 @@ public class ServiceController : ControllerBase
             });
         }
 
-        var existingService = await _serviceService.GetById(dto.ServiceId);
+        var existingService = await _serviceService.GetById(id);
         if (existingService == null)
         {
-            return NotFound(new { message = $"Servicio con ID {dto.ServiceId} no encontrado" });
+            return NotFound(new { message = $"Servicio con ID {id} no encontrado" });
         }
 
-        var success = await _serviceService.UpdateAccumulatedRevenue(dto.ServiceId, dto.Amount, dto.Operation);
+        var success = await _serviceService.UpdateAccumulatedRevenue(id, dto.Amount, dto.Operation);
 
         if (!success)
         {
@@ -199,7 +201,7 @@ public class ServiceController : ControllerBase
         return Ok(new SuccessResponse
         {
             Message = "Acumulador de ingresos actualizado exitosamente",
-            Id = dto.ServiceId
+            Id = id
         });
     }
 

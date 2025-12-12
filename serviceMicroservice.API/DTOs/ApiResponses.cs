@@ -29,7 +29,6 @@ public class UpdateServiceDto
 
 public class UpdateAccumulatedRevenueDto
 {
-    public int ServiceId { get; set; }
     public decimal Amount { get; set; }
     public string Operation { get; set; }
 }
